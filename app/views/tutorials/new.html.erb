@@ -1,0 +1,8 @@
+<h1>Tutorials#new</h1>
+<p>Find me in app/views/tutorials/new.html.erb</p>
+<%= form_for @profile, url: tutorials_edit_path do |f| %>
+  <%= f.fields_for :movie do |m| %>
+    <%= m.file_field :video %>
+  <% end %>
+  <%= f.submit "upload and edit the script" %>
+<% end %>

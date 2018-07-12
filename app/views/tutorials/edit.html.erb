@@ -1,0 +1,7 @@
+<h1>Tutorials#edit</h1>
+<p>Find me in app/views/tutorials/edit.html.erb</p>
+<%= video_tag @profile.movie.video.to_s %>
+<%= form_for @profile,url: tutorials_edit_path do |f| %>
+  <%= f.text_area :script %>
+  <%= f.submit "Go Home" %>
+<% end %>

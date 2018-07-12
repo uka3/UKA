@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TeDDY</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+   <p class="notice"><%= notice %></p>
+   <P class="alert"><%= alert %></p>
+
+     <% if user_signed_in? %>
+       <p><%= link_to "sign OUT", destroy_user_session_path, method: :delete %></p>
+     <% end %>
+
+
+    <%= yield %>
+  </body>
+</html>
