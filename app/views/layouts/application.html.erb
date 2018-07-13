@@ -9,11 +9,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+  <% if notice.present? || alert.present? %>
    <p class="notice"><%= notice %></p>
    <P class="alert"><%= alert %></p>
+  <% end %>
 
      <% if user_signed_in? %>
-       <p><%= link_to "sign OUT", destroy_user_session_path, method: :delete %></p>
+       <p class="header">
+         <%= link_to destroy_user_session_path, method: :delete do %>
+           <%= image_tag "icons/s-out.png" %>
+        <% end %>
+      </p>
      <% end %>
 
 

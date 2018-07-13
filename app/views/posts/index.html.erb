@@ -1,0 +1,8 @@
+<h1 class="text-center text-white">All video</h1>
+<% @posts.each do |post| %>
+  <p>
+    <%= link_to posts_show_path(post) do %>
+      <%= video_tag post.movie.video.to_s if post.movie.present? %>
+    <% end %>
+  </p>
+  <% end %>

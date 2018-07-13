@@ -1,0 +1,12 @@
+<div class="users-new-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 users-new-container">
+        <h1 class="text-center text-white">Check and Edit the script</h1>
+        <%= video_tag @post.movie.video.to_s, controls: true %>
+        <%= @post.title %>
+        <%= @post.script %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="users-new-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 users-new-container">
+        <h1 class="text-center text-white">Edit yourself present</h1>
+        <%= form_for @post, url: posts_create_path do |f| %>
+        <%= f.fields_for :movie do |m| %>
+         <%= m.file_field :video %>
+        <% end %>
+        <%= f.submit "UPload and Edit the script" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
