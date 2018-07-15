@@ -1,3 +1,164 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+video {
+  width: 100%;
+}
+
+.posts-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 300px;
+  background-image: image-url('icons/top.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:　200px 600px;
+  background-color: #fff;
+
+  .posts-new-container {
+    padding-top: 100px;
+
+    .text-white {
+      color: #000;
+    }
+
+    h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      font-weight: 100px;
+    }
+  }
+
+  .btn-white {
+    color: #fff;
+    border: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.7);
+
+    &:hover {
+      color: #000;
+    }
+   }
+  }
+
+
+.posts-index-wrapper {
+  width: 100vw;
+  height: auto;
+  padding: 15px;
+  background-image: image-url('icons/top.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:　200px 600px;
+  background-color: #fff;
+
+  .container {
+    width: 800px;
+
+
+  .text-white {
+    color: #000;
+  }
+
+  h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: 900px;
+  }
+ }
+
+  .posts-index-container {
+    padding-top: 300px;
+   }
+
+  .btn-white {
+    color: #fff;
+    border: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.7);
+
+    &:hover {
+      color: #000;
+    }
+   }
+  }
+
+
+.posts-edit-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('icons/top.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:　200px 600px;
+  background-color: #fff;
+
+  .posts-edit-container {
+    padding-top: 100px;
+
+    .text-white {
+      color: #000;
+    }
+
+    h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      font-weight: 900px;
+    }
+   }
+
+    .btn-white {
+      color: #fff;
+      border: 1px solid #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.7);
+
+      &:hover {
+        color: #000;
+      }
+     }
+    }
+
+
+.posts-show-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('icons/top.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:　200px 600px;
+  background-color: #fff;
+
+  .posts-show-container {
+    padding-top: 100px;
+
+    .text-white {
+      color: #000;
+    }
+
+    h1 {
+      font-size: 35px;
+      margin-bottom: 20px;
+      font-weight: 900px;
+    }
+  }
+  .btn-white {
+    color: #fff;
+    border: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.7);
+
+    &:hover {
+      color: #000;
+    }
+   }
+  }

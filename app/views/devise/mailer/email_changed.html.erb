@@ -1,13 +1,12 @@
-<div class="users-new-wrapper">
+<div class="devise-new-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-offset-4 col-md-4 users-new-container">
-        <h1 class="text-center text-white">Hello
-          <%= @email %>!</h1>
+      <div class="col-md-offset-4 col-md-4 devise-new-container">
+        <h1 class="text-center text-white">Hello<%= @email %>!</h1>
         <% if @resource.try(:unconfirmed_email?) %>
-          <p>We're contacting you to notify you that your email is being changed to <%= @resource.unconfirmed_email %>.</p>
+          <p>We're Contacting You To Notify You That Your Email Is Being Changed To <%= @resource.unconfirmed_email %>.</p>
         <% else %>
-          <p>We're contacting you to notify you that your email has been changed to <%= @resource.email %>.</p>
+          <p>We're Contacting You To Notify You That Your Email Has Been Changed To <%= @resource.email %>.</p>
         <% end %>
       </div>
     </div>

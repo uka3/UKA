@@ -1,10 +1,9 @@
-<div class="users-new-wrapper">
+<div class="devise-new-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-offset-4 col-md-4 users-new-container">
-        <h1 class="text-center text-white">Welcome
-          <%= @email %>!</h1>
-        <p>You can confirm your account email through the link below:</p>
+      <div class="col-md-offset-4 col-md-4 devise-new-container">
+        <h1 class="text-center text-white">Welcome<%= @email %>!!</h1>
+        <p>You Can Confirm Your Account Email Through The Link Below:</p>
         <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
       </div>
     </div>

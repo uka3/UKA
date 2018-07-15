@@ -1,15 +1,8 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
-   #respond_to do |format|
-     #if @post.movie.recreate_versions!
-       #format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-       #format.json { head :no_content }
-     #else
-       #format.html { render action: 'Edit' }
-       #format.json { render json: @post.errors, status: :unprocessable_entity }
-     #end
-   #end
+
+  
  end
  def new
    @post = current_user.posts.build

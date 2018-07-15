@@ -1,0 +1,41 @@
+.devise-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('icons/top.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+
+  .devise-new-container {
+    padding-top: 300px
+   }
+
+  .text-white {
+    color: #000;
+    font-size: 30px;
+   }
+
+   h1 {
+     font-weight: 100px;
+   }
+
+  .text-center {
+    text-align: left;
+  }
+
+
+  .btn-white {
+    color: #fff;
+    border: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.7);
+
+   &:hover {
+    color: #000;
+   }
+  }
+ }

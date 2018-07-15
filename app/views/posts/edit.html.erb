@@ -1,13 +1,13 @@
-<div class="users-new-wrapper">
+<div class="posts-edit-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-offset-4 col-md-4 users-new-container">
-        <h1 class="text-center text-white">Check and Edit the script</h1>
+      <div class="col-md-offset-4 col-md-4 posts-edit-container">
+        <h1 class="text-center text-white">Check Your Pressentation</h1>
         <%= video_tag @post.movie.video.to_s %>
-        <%= form_for @post,url: posts_update_path do |f| %>
-         <%= f.text_area :script %>
-         <%= f.text_field :title %>
-         <%= f.submit "UPdate Post" %>
+          <%= form_for @post,url: posts_update_path do |f| %>
+              <%= f.text_area :script, class: 'btn btn-block btn-white' %>
+              <%= f.text_field :title, class: 'btn btn-block btn-white' %>
+              <%= f.submit "Uploading Your Presentation" %>
         <% end %>
       </div>
     </div>

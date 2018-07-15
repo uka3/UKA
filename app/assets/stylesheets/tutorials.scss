@@ -1,3 +1,38 @@
-// Place all the styles related to the tutorials controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.tutorialts-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('icons/top.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+
+  .tutorials-new--container {
+    padding-top: 400px;
+   }
+
+  .text-white {
+    color: #000;
+  }
+
+  h1 {
+   font-weight: 100px;
+   font-size: 56px;
+   margin-bottom: 20px;
+  }
+
+
+  .btn-white {
+    color: #fff;
+    border: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.7);
+
+   &:hover {
+    color: #000;
+   }
+  }
+}
