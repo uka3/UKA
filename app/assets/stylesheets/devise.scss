@@ -1,7 +1,7 @@
 .devise-new-wrapper {
   width: 100vw;
   height: 100vh;
-  background-image: image-url('icons/top.png');
+  background-image: image-url('icons/top1.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,7 +13,7 @@
    }
 
   .text-white {
-    color: #000;
+    color: #fff;
     font-size: 30px;
    }
 
@@ -32,10 +32,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.0);
 
    &:hover {
-    color: #000;
+    color: #fff;
+    }
    }
   }
- }

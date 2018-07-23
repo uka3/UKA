@@ -11,13 +11,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
  def create
-  @user = User.find_by(user_params).build
-  if @user.save
-    redirect_to tutorials_new_path(@user)
-  else
-    render :new
-  end
+   super
+  # @user = User.find_by(user_attributes).build
+  # if @user.save
+  #   redirect_to tutorials_new_paths
+  # else
+  #   render :new
+  # end
  end
+
+
 
   # GET /resource/edit
   # def edit
@@ -66,11 +69,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   private
-  def user_params
-    params.require(:user).permit(user_atributes)
+  def user_attributes
+    params.require(:user).permit(user_params)
   end
 
-  def user_atributes
+  def user_params
     [:email, :password,:password_confirmation]
   end
 end
