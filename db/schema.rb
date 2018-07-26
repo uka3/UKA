@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_07_13_042638) do
 
-  create_table "movies", force: :cascade do |t|
+  create_table "movies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "videoble_id"
     t.string "videoble_type"
     t.string "video"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2018_07_13_042638) do
     t.text "title"
   end
 
-  create_table "posts", force: :cascade do |t|
+  create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -30,14 +30,14 @@ ActiveRecord::Schema.define(version: 2018_07_13_042638) do
     t.integer "user_id"
   end
 
-  create_table "profiles", force: :cascade do |t|
+  create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
     t.text "script"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

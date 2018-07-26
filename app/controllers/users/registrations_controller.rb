@@ -9,15 +9,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+
   # POST /resource
  def create
    super
-  # @user = User.find_by(user_attributes).build
-  # if @user.save
-  #   redirect_to tutorials_new_paths
-  # else
-  #   render :new
-  # end
+
  end
 
 
@@ -67,6 +63,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+
+  def tutorials
+  end
+
+  def after_inactive_sign_up_path_for(resource)
+   tutorials_new_path
+ end
 
   private
   def user_attributes

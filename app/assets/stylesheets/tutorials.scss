@@ -1,6 +1,7 @@
-.tutorials-new-wrapper {
+.tutorila-new-wrapper {
   width: 100vw;
   height: 100vh;
+  padding-top: 300px;
   background-image: image-url('icons/top2.png');
   background-position: center center;
   background-repeat: no-repeat;
@@ -8,20 +9,19 @@
   background-size: cover;
   background-color: #fff;
 
-  .tutorials-new--container {
-    padding-top: 400px;
-   }
+  .tutorials-new-container {
+    padding-top: 100px;
 
-  .text-white {
-    color: #000;
+    .text-white {
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      font-weight: 100px;
+    }
   }
-
-  h1 {
-   font-weight: 100px;
-   font-size: 56px;
-   margin-bottom: 20px;
-  }
-
 
   .btn-white {
     color: #fff;
@@ -29,10 +29,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.0);
 
-   &:hover {
-    color: #000;
+    &:hover {
+      color: #fff;
+    }
    }
   }
-}

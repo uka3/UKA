@@ -12,9 +12,22 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => {
  :registrations => 'users/registrations',
  :sessions => 'users/sessions'
-
 }
 
+ devise_scope :user do
+   get 'tutorials/new' => 'tutorials#new'
+ end
+
+ def devise_scope(scope)
+   constraint = lambda do |request|
+     request.env["devise.mapping"] = Devise.mapping[scope]
+     true
+   end
+
+   constraints(constraint) do
+     yeild
+   end
+end
   resources :users, :only => [:show]
   #resources :users, :only => [:index]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
