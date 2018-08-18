@@ -2,8 +2,8 @@
 
 ## デプロイ方法
 1. ローカルの内容をgitに反映 <br>
-	CSSを変更している場合は下記も実行 <br>
-	`rake assets:precompile` <br>
+	(CSSを変更している場合は下記も実行 <br>
+	`rake assets:precompile` )<br>
 	`git add .` <br>
 	`git commit -m "変更内容を記載"` <br>
 	`git push origin master` <br>
