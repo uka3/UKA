@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 posts-edit-container">
-        <h1 class="text-white">Comfirmation</h1>
+        <h1 class="text-white">2nd Comfirmation</h1>
         <%= video_tag @post.movie.video.to_s %>
           <%= form_for @post,url: posts_update_path do |f| %>
               <div style="color:white"><h1>Title</h1>
@@ -11,7 +11,7 @@
               <div style="color:white"><h1>Script</h1>
                 <%= f.text_area :script, class: 'btn btn-block btn-white' %>
               </div>
-              <%= f.submit "Up Your Presentation" %>
+              <%= f.submit "Check Out" %>
         <% end %>
         <style media="screen">
           input, textarea {

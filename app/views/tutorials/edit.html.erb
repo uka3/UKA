@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 tutorials-edit-container">
-        <h1 class="text-center text-white">Comfirmation</h1>
+        <h1 class="text-center text-white">Final Comfirmation</h1>
         <%= video_tag @profile.movie.video.to_s %>
         <%= form_for @profile,url: tutorials_edit_path do |f| %>
         <div style="color:white">Title
@@ -11,7 +11,7 @@
         <div style="color:white">Script
         <%= f.text_area :script, class: 'btn btn-block btn-white' %>
         </div>
-        <%= f.submit "Give The World Your Presentation" %>
+        <%= f.submit "Let Make It Happen　With UKA! " %>
         <% end %>
       </div>
     </div>
