@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   def after_sign_up_path_for(resource)
       tutorials_new_path
   end
-  
+
   def configure_permitted_parameters
     added_attrs = [:name, :email, :password, :password_confirmation, :remember_me]
     devise_parameter_sanitizer.permit :sign_up, keys: added_attrs

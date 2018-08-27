@@ -1,0 +1,40 @@
+@media screen and (min-width:300px){
+  /*300px以上で適用する内容*/
+  .tutorila-new-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 300px;
+    background-image: image-url('icons/top.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+
+    .tutorials-new-container {
+      padding-top: 100px;
+
+      .text-white {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+        font-weight: 100px;
+      }
+    }
+
+    .btn-white {
+      border: 1px solid #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.0);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+   }
+}

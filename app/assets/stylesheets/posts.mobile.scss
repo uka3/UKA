@@ -1,0 +1,168 @@
+@media screen and (min-width:300px){
+  /*300px以上で適用する内容*/
+  video {
+    width: 100%;
+  }
+
+  .posts-new-wrapper {
+    width: 100vw;
+    height: auto;
+    padding-top: 15px;
+    background-image: image-url('icons/top.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+
+    .posts-new-container {
+      padding-top: 30%;
+      margin-bottom: 180px;
+      color: #fff;
+
+      .text-white {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 35px;
+        margin-bottom: 170px;
+        font-weight: 100px;
+      }
+     }
+
+    .btn-white {
+      color: #fff;
+      border: 1px solid #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.0);
+
+      &:hover {
+        color: #fff;
+      }
+     }
+    }
+
+
+  .posts-index-wrapper {
+    width: 100vw;
+    height: auto;
+    padding: 15px;
+    background-image: image-url('icons/top.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+
+
+      .text-white {
+        color: #fff;
+      }
+
+     h1 {
+      font-size: 25px;
+      margin-bottom: 0px;
+     }
+
+    .posts-index-container {
+      padding-top: 30%;
+     }
+
+    .btn-white {
+      color: #fff;
+      border: 1px solid #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.0);
+
+       &:hover {
+        color: #fff;
+       }
+     }
+    }
+
+
+  .posts-edit-wrapper {
+    width: 100vw;
+    height: auto;
+    padding-top: 15px;
+    background-image: image-url('icons/top.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+
+    .posts-edit-container {
+      padding-top: 30%;
+      margin-bottom: 80px;
+      color: #fff;
+
+      .text-white {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 100px;
+      }
+     }
+
+    .btn-white {
+      color: #fff;
+      border: 1px solid #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.0);
+
+      &:hover {
+        color: #fff;
+      }
+     }
+      }
+
+
+  .posts-show-wrapper {
+    width: 100vw;
+    height: auto;
+    padding-top: 15px;
+    background-image: image-url('icons/top.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+
+    .posts-show-container {
+      padding-top: 30%;
+      margin-bottom: 80px;
+      color: #fff;
+
+      .text-white {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 100px;
+      }
+    }
+    .btn-white {
+      color: #fff;
+      border: 1px solid #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.0);
+
+      &:hover {
+        color: #fff;
+      }
+     }
+   }
+}

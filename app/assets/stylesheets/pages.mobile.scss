@@ -1,0 +1,54 @@
+@media screen and (min-width:300px){
+  /*300px以上で適用する内容*/
+  .header{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+
+    a{
+      img{
+        height: 50px;
+      }
+    }
+  }
+
+  .top-hero-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: image-url('icons/top.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+
+    .top-hero-container {
+      padding-top: 30%;
+
+      .text-white {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        font-weight: 100px;
+      }
+
+      h2 {
+        margin-bottom: 60px;
+        font-weight: 100px;
+        font-size: 15px;
+      }
+
+    .btn-white {
+      color: #fff;
+      border: 1px solid #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.0);
+      }
+    }
+  }
+}

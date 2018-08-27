@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 posts-new-container">
-        <h1 class="text-center text-white">Giving</h1>
+        <h1 class="text-center text-white">Check Out</h1>
         <%= form_for @post, url: posts_create_path do |f| %>
                <%= f.fields_for :movie do |m| %>
                  <%= m.file_field :video %>
                <% end %>
-               <%= f.submit "Check Your Pressentation" %>
+          <%= f.submit "Give Your Presentation" %>
             <% end %>
       </div>
     </div>

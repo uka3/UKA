@@ -2,13 +2,25 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 posts-edit-container">
-        <h1 class="text-center text-white">Check Your Pressentation</h1>
+        <h1 class="text-white">Comfirmation</h1>
         <%= video_tag @post.movie.video.to_s %>
           <%= form_for @post,url: posts_update_path do |f| %>
-              <%= f.text_area :script, class: 'btn btn-block btn-white' %>
-              <%= f.text_field :title, class: 'btn btn-block btn-white' %>
-              <%= f.submit "Uploading Your Presentation" %>
+              <div style="color:white"><h1>Title</h1>
+                <%= f.text_field :title, class: 'btn btn-block btn-white' %>
+              </div>
+              <div style="color:white"><h1>Script</h1>
+                <%= f.text_area :script, class: 'btn btn-block btn-white' %>
+              </div>
+              <%= f.submit "Up Your Presentation" %>
         <% end %>
+        <style media="screen">
+          input, textarea {
+            -webkit-user-select: auto !important;
+            -moz-user-select: auto !important;
+            -ms-user-select: auto !important;
+            user-select: auto !important;
+          }
+        </style>
       </div>
     </div>
   </div>

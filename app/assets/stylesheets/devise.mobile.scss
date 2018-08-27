@@ -1,0 +1,50 @@
+@media screen and (min-width:300px){
+  /*300px以上で適用する内容*/
+.alert {
+    padding: 0px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  p {
+     margin: 0 0 10px;
+  }
+}
+  .devise-new-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: image-url('icons/top.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+
+    .devise-new-container {
+      padding-top: 50%;
+     }
+
+    .text-white {
+      font-size: 30px;
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     }
+
+     h1 {
+       font-weight: 100px;
+     }
+
+    .btn-white {
+      color: #fff;
+      border: 1px solid;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.0);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+      &:hover {
+            color: #fff;
+      }
+     }
+   }
+}

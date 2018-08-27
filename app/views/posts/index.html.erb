@@ -1,13 +1,17 @@
 <div class="posts-index-wrapper">
   <div class="container">
-   <h1 class="text-center text-white">Pressentation List</h1>
+   <h1 class="text-center text-white">Presentation List</h1>
     <div class="row">
       <% @posts.each do |post| %>
         <% next if post.movie.blank? %>
 
         <div class="posts-index-container">
+            <div style="color:white">Title:
             <%= post.title %>
+           </div>
+            <div style="color:white">Script:</style>
             <%= post.script %>
+            </div>
             <%= link_to posts_show_path(post) do %>
             <%= video_tag post.movie.video.to_s %>
           <% end %>

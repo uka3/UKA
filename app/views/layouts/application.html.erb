@@ -4,26 +4,23 @@
     <title>UKA</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
   <% if notice.present? || alert.present? %>
    <p class="notice"><%= notice %></p>
    <P class="alert"><%= alert %></p>
   <% end %>
-
      <% if user_signed_in? %>
        <p class="header">
          <%= link_to destroy_user_session_path, method: :delete do %>
            <%= image_tag "icons/s-out.png" %>
-        <% end %>
-      </p>
+         <% end %>
+       </p>
      <% end %>
-
-
     <%= yield %>
+    <footer style="color:black">http://www.yunphoto.net</footer>
   </body>
 </html>

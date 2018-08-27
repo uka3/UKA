@@ -1,12 +1,14 @@
-video {
-  width: 100%;
-}
+@media screen and (min-width:920px){
+  /*920px以上で適用する内容*/
+  video {
+    width: 300px;
+  }
 
 .posts-new-wrapper {
   width: 100vw;
   height: 100vh;
   padding-top: 300px;
-  background-image: image-url('icons/top2.png');
+  background-image: image-url('icons/top.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,8 +26,9 @@ video {
       font-size: 56px;
       margin-bottom: 20px;
       font-weight: 100px;
+
     }
-  }
+   }
 
   .btn-white {
     color: #fff;
@@ -46,7 +49,7 @@ video {
   width: 100vw;
   height: auto;
   padding: 15px;
-  background-image: image-url('icons/top2.png');
+  background-image: image-url('icons/top.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -57,16 +60,16 @@ video {
     width: 800px;
 
 
-  .text-white {
-    color: #fff;
-  }
+    .text-white {
+      color: #fff;
+    }
 
-  h1 {
+   h1 {
     font-size: 56px;
     margin-bottom: 20px;
     font-weight: 900px;
+   }
   }
- }
 
   .posts-index-container {
     padding-top: 300px;
@@ -80,17 +83,17 @@ video {
     font-size: 20px;
     background-color: rgba(0,0,0,0.0);
 
-    &:hover {
+     &:hover {
       color: #fff;
-    }
+     }
    }
   }
 
 
 .posts-edit-wrapper {
   width: 100vw;
-  height: 100vh;
-  background-image: image-url('icons/top2.png');
+  height: auto;
+  background-image: image-url('icons/top.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -111,25 +114,25 @@ video {
     }
    }
 
-    .btn-white {
-      color: #fff;
-      border: 1px solid #fff;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      font-size: 20px;
-      background-color: rgba(0,0,0,0.0);
+  .btn-white {
+    color: #fff;
+    border: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.0);
 
-      &:hover {
-        color: #fff;
-      }
-     }
+    &:hover {
+      color: #fff;
+    }
+   }
     }
 
 
 .posts-show-wrapper {
   width: 100vw;
-  height: 100vh;
-  background-image: image-url('icons/top2.png');
+  height: auto;
+  background-image: image-url('icons/top.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -137,7 +140,7 @@ video {
   background-color: #fff;
 
   .posts-show-container {
-    padding-top: 100px;
+    padding-top: 30%;
 
     .text-white {
       color: #fff;
@@ -161,4 +164,5 @@ video {
       color: #fff;
     }
    }
-  }
+ }
+}

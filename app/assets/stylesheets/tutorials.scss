@@ -1,8 +1,10 @@
+@media screen and (min-width:920px){
+  /*920px以上で適用する内容*/
 .tutorila-new-wrapper {
   width: 100vw;
   height: 100vh;
   padding-top: 300px;
-  background-image: image-url('icons/top2.png');
+  background-image: image-url('icons/top.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +26,6 @@
   }
 
   .btn-white {
-    color: #fff;
     border: 1px solid #fff;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -34,5 +35,6 @@
     &:hover {
       color: #fff;
     }
-   }
   }
+ }
+}

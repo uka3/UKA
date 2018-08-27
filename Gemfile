@@ -78,3 +78,7 @@ gem 'devise-bootstrap-views'
 gem 'carrierwave'
 
 gem 'bootstrap-sass'
+
+gem 'meta-tags'
+gem "jquery-rails"
+gem 'jquery-ui-rails'

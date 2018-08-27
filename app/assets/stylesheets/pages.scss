@@ -1,3 +1,5 @@
+@media screen and (min-width:920px){
+  /*920px以上で適用する内容*/
 .header{
   padding: 50px 0 0 50px;
   height: 100px;
@@ -14,7 +16,7 @@
 .top-hero-wrapper {
   width: 100vw;
   height: 100vh;
-  background-image: image-url('icons/top1.png');
+  background-image: image-url('icons/top.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,7 +29,6 @@
     .text-white {
       color: #fff;
     }
-
 
     h1 {
       font-size: 56px;
@@ -49,4 +50,5 @@
     background-color: rgba(0,0,0,0.0);
     }
   }
+}
 }
