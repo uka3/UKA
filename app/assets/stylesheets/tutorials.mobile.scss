@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
     padding-top: 300px;
-    background-image: image-url('icons/top.png');
+    background-image: image-url("icons/top.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,4 +42,43 @@
       }
     }
    }
-}
+   .tutorials-edit-wrapper {
+     width: 100vw;
+     height: auto;
+     padding-top: 15px;
+     background-image: image-url("icons/top.png");
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     background-color: #fff;
+
+     .tutorials-edit-container {
+       padding-top: 30%;
+       margin-bottom: 80px;
+       color: #fff;
+
+       .text-white {
+         color: #fff;
+       }
+
+       h1 {
+         font-size: 24px;
+         font-weight: 100px;
+       }
+      }
+
+     .btn-white {
+       color: #fff;
+       border: 1px solid #fff;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       font-size: 20px;
+       background-color: rgba(0,0,0,0.0);
+
+       &:hover {
+         color: #fff;
+       }
+     }
+   }
+ }
