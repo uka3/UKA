@@ -22,6 +22,10 @@
 	`cd /usr/local/app/uka` <br>
 5. github上の最新を取得 <br>
 	`git pull origin master` or 'git clone https://github.com/uka3/UKA.git'<br>
+	(CSSを変更している場合は下記も実行 <br>
+	`rails assets:precompile` )<br>
+	`git add .` <br>
+	`git commit -m "変更内容を記載"` <br>
 	Gemfileを変更している場合 <br>
 	`bundle install` <br>
 	migrationファイルが追加されている場合 <br>

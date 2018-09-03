@@ -1,12 +1,11 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
-
-  
  end
+
  def new
    @post = current_user.posts.build
-   @post.build_movie# = Post.new(user_id: current_user.id)
+   @post.build_movie
  end
 
  def create
