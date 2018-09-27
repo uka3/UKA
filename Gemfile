@@ -82,3 +82,4 @@ gem 'bootstrap-sass'
 gem 'meta-tags'
 gem "jquery-rails"
 gem 'jquery-ui-rails'
+gem 'redis'

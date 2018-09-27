@@ -2,19 +2,23 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 posts-edit-container">
+
         <h1 class="text-white">2nd Comfirmation</h1>
+
         <%= video_tag @post.movie.video.to_s %>
+
           <%= form_for @post,url: posts_update_path do |f| %>
               <div style="color:white"><h1>Title</h1>
-                <%= f.text_field :title, class: 'btn btn-block btn-white' %>
+               <%= f.text_field :title, class: 'btn btn-block btn-white' %>
               </div>
               <div style="color:white"><h1>Script</h1>
-                <%= f.text_area :script, class: 'btn btn-block btn-white' %>
+               <%= f.text_area :script, class: 'btn btn-block btn-white' %>
               </div>
               <div style="color:black">
-              <%= f.submit "Check Out" %>
-            </div>
+               <%= f.submit "Check Out" %>
+              </div>
         <% end %>
+
         <style media="screen">
           input, textarea {
             -webkit-user-select: auto !important;
@@ -23,6 +27,7 @@
             user-select: auto !important;
           }
         </style>
+        
       </div>
     </div>
   </div>

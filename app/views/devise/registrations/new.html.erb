@@ -2,14 +2,25 @@
 　<div class="container">
    <div class="row">
     <div class="col-md-offset-4 col-md-4 devise-new-container">
+
       <h1 class="text-white">UKA</h1>
+
       <header class="text-white">Sign Up</header>
+
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
        <%= devise_error_messages! %>
+
+       <div class="field" style="color:#337ab7">
+        <%= f.label :username %><br />
+        <%= f.text_field :username, autofocus: true %>
+       </div>
+
        <div class="field" style="color:#337ab7">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
        </div>
+
        <div class="field" style="color:#337ab7">
         <%= f.label :password %>
         <% if @minimum_password_length %>
@@ -17,15 +28,20 @@
         <% end %><br />
         <%= f.password_field :password, autocomplete: "off" %>
        </div>
+
        <div class="field" style="color:#337ab7">
         <%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
        </div>
+
        <div class="actions">
          <%= f.submit "Check Out" %>
        </div>
+
       <% end %>
+
       <%= render "devise/shared/links" %>
+
    </div>
   </div>
  </div>

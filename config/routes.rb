@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  devise_scope :user do
+    get 'tutorials/new' => 'tutorials#new'
+  end
+  mount ActionCable.server => '/cable'
+  get 'users/index'
+  get 'users/show'
   get 'posts/index',as: "posts_index"
   get 'posts/new',as: "posts_new"
   post "posts/create",as: "posts_create"
@@ -14,9 +20,6 @@ Rails.application.routes.draw do
  :sessions => 'users/sessions'
 }
 
- devise_scope :user do
-   get 'tutorials/new' => 'tutorials#new'
- end
 
  def devise_scope(scope)
    constraint = lambda do |request|
@@ -34,4 +37,5 @@ end
   #if Rails.env.development?
     #mount LetterOpenerWeb::Engine, at: "/letter_opener"
   #end
+
 end

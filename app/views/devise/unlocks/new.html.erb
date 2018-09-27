@@ -2,19 +2,28 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 devise-new-container">
+
         <h1 class="text-white">UKA</h1>
+
         <header class="text-white">Resend Unlock Instructions</header>
+
          <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+
          <%= devise_error_messages! %>
-       <div class="field" style="color:#337ab7">
-         <%= f.label :email %>
-         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-       </div>
-       <div class="actions">
-         <%= f.submit "Check Out" %>
-       </div>
+
+         <div class="field" style="color:#337ab7">
+           <%= f.label :email %>
+           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+         </div>
+
+         <div class="actions">
+           <%= f.submit "Check Out" %>
+         </div>
+
       <% end %>
+
       <%= render "devise/shared/links" %>
+
     </div>
    </div>
   </div>
