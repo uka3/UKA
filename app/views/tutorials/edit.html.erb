@@ -2,24 +2,33 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 tutorials-edit-container">
+
         <h1 class="text-center text-white">Final Comfirmation</h1>
+
         <%= video_tag @profile.movie.video.to_s %>
+
         <%= form_for @profile,url: tutorials_new_path do |f| %>
-        <div style="color:white"><h2>Script</h2>
-        <%= f.text_area :script, class: 'btn btn-block btn-white' %>
+
+        <div style="color:white">
+          <h2>Script</h2>
+          <%= f.text_area :script, class: 'btn btn-block btn-white' %>
         </div>
+
         <div style="color:black">
-        <%= f.submit "Let Make It Happen With UKA" %>
-      </div>
-      <style media="screen">
-        input, textarea {
-          -webkit-user-select: auto !important;
-          -moz-user-select: auto !important;
-          -ms-user-select: auto !important;
-          user-select: auto !important;
-        }
-      </style>
+          <%= f.submit "Let Make It Happen With UKA" %>
+        </div>
+
+        <style media="screen">
+          input, textarea {
+           -webkit-user-select: auto !important;
+           -moz-user-select: auto !important;
+           -ms-user-select: auto !important;
+           user-select: auto !important;
+         }
+        </style>
+
         <% end %>
+        
       </div>
     </div>
   </div>

@@ -2,17 +2,24 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 posts-show-container">
+
         <h1 class="text-white">Final Confirmation</h1>
+
         <%= video_tag @post.movie.video.to_s, controls: true %>
+
         <div style="color:white">Title:
-        <%= @post.title %>
-       </div>
+         <%= @post.title %>
+        </div>
+
         <div style="color:white">Script:
-        <%= @post.script %>
-       </div>
-       <div class="actions" >
+         <%= @post.script %>
+
+        </div>
+
+        <div class="actions" >
         <%= link_to 'Check Out', posts_index_path %>
-       </div>
+        </div>
+
       </div>
     </div>
   </div>

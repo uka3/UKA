@@ -2,22 +2,29 @@
   <div class="container">
     <div class="row">
       <div class="col-md-offset-4 col-md-4 tutorials-new-container">
+
         <h1 class="text-center text-white">Please Introduce Youself</h1>
-　　　　　<h2 class="text-center text-white">
+
+        <h2 class="text-center text-white">
            For example...<br>
             .Name<br>
             .Country<br>
             .Object<br>
-             etc...<br>
+             eftc...<br>
         </h2>
+
         <%= form_for @profile, url: tutorials_edit_path do |f| %>
+
         <%= f.fields_for :movie do |m| %>
          <%= m.file_field :video %>
         <% end %>
+
         <div style="color:black">
-        <%= f.submit "Check Out" %>
-      </div>
+          <%= f.submit "Check Out" %>
+        </div>
+
         <% end %>
+
       </div>
     </div>
   </div>
