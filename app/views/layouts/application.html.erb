@@ -20,11 +20,11 @@
     <% if user_signed_in? %>
 
       <p class="header">
+        You Signed in as <%= current_user.email %>
         <%= link_to destroy_user_session_path, method: :delete do %>
           <%= image_tag "icons/s-out.png" %>
         <% end %>
       </p>
-
      <% end %>
 
      <%= yield %>

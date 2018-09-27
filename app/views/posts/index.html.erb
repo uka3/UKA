@@ -2,12 +2,15 @@
   <div class="container">
    <h1 class="text-center text-white">UKA</h1>
     <div class="row">
+      <h3>Count Of Evils: <%= @post.evils.count %></h3>
 
       <% @posts.each do |post| %>
 
         <% next if post.movie.blank? %>
 
         <div class="posts-index-container">
+
+        <h2>Presentered by<%= @user.user.name %></h2>
 
         <div style="color:white">Title:
           <%= post.title %>
@@ -17,10 +20,40 @@
           <%= post.script %>
         </div>
 
+        <%= form_for [@post, @evil] do |f| %>
+          <%= f.submit 'Evil' %>
+        <% end %>
+
+        <h3>evilしたメンバー</h3>
+         <% @post.evilig_users.each do |user| %>
+        <li><%= user.name %></li>
+
         <%= link_to posts_show_path(post) do %>
           <%= video_tag post.movie.video.to_s %>
         <% end %>
+
+
         </div>
+
+        <% if current_user.already_eviling?(@post) %>
+
+        <%= button_to 'Delete My Evil', post_evil_path(@post), method: :delete %>
+
+        <% else %>
+
+        <%= form_for [@post, @evil] do |f| %>
+
+         <% if @like.errors.any? %>
+
+          <% @like.errors.full_messages.each do |msg| %>
+           <li style="color: red;"><%= msg %></li>
+          <% end %>
+
+         <% end %>
+
+        <%= f.submit 'Evil' %>
+       <% end %>
+      <% end %>
 
       <% end %>
     </div>
